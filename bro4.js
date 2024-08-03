@@ -27,26 +27,21 @@ document.addEventListener("DOMContentLoaded", () => {
         for (let i = 0; i < bigBack.length; i++) {
             bigBack[i].style.backgroundColor = isOn ? "#3399FF" : "black";
         }
-        welcBlurb.style.backgroundColor = isOn ? "#F3FEFF" : "black";
-        welcBlurb.style.color = isOn ? "black" : "white";
-
-        // Loop through all buttonback elements and change their background color
+        if (welcBlurb) {
+            welcBlurb.style.backgroundColor = isOn ? "#F3FEFF" : "black";
+            welcBlurb.style.color = isOn ? "black" : "white";
+        }
         for (let i = 0; i < buttonBeck.length; i++) {
             buttonBeck[i].style.backgroundColor = isOn ? "#F3FEFF" : "black";
         }
-
-        // Loop through all scrolla elements and change their background color
         for (let i = 0; i < scrola.length; i++) {
             scrola[i].style.backgroundColor = isOn ? "#F3FEFF" : "black";
         }
-
-        arlo1.src = isOn ? arlo1src : "design.png";
-        arlo2.src = isOn ? arlo2src : "arro-removebg-preview.png";
-        arlo3.src = isOn ? arlo3src : "design2.png";
-
-        Welcome.style.backgroundColor = isOn ? "#D3E2E4" : "#C0C0C0";
-
-        for (let i=0; i < aspire.length; i++) {
+        if (arlo1) arlo1.src = isOn ? arlo1src : "design.png";
+        if (arlo2) arlo2.src = isOn ? arlo2src : "arro-removebg-preview.png";
+        if (arlo3) arlo3.src = isOn ? arlo3src : "design2.png";
+        if (Welcome) Welcome.style.backgroundColor = isOn ? "#D3E2E4" : "#C0C0C0";
+        for (let i = 0; i < aspire.length; i++) {
             aspire[i].style.color = isOn ? "black" : "#66FFFF";
         }
     }
@@ -60,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Apply the current color mode on page load
     applyColorMode();
 
-    colorButton.addEventListener("click", toggleButton);
+    if (colorButton) colorButton.addEventListener("click", toggleButton);
 });
 
 function scrollToTarget() {

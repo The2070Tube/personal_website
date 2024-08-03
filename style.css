@@ -8,6 +8,13 @@ body {
     margin: 0;
 }
 
+.fpnt {
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal !important;
+    padding-top: 12px;
+}
+
 .navbar {
     display: flex;
     background-color: #C0C0C0;
@@ -25,13 +32,17 @@ body {
     font-weight: normal !important;
     text-decoration: none;
     padding-top: 10px;
+    transition: 0.15s;
 }
 
 .font2 {
     color: black;
     font-weight: normal !important;
     text-decoration: none;
+    transition: 0.15s;
+    padding-top: 10px;
 }
+
 
 .firstnav {
     font-size: 14px;
@@ -44,11 +55,19 @@ body {
 
 .secondnav {
     display: flex;
-    gap: 10px; /* Adds spacing between items */
+    gap: 20px; /* Adds spacing between items */
     font-size: 14px;
     font-family: Calibri, sans-serif;
     padding-right: 100px;
 }
+
+.secondnav button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
 
 .big_background {
     background-color: black;
@@ -100,7 +119,7 @@ body {
 }
 
 #Welcome {
-    background-color: goldenrod;
+    background-color: #C0C0C0;
     padding-top: 20px; /* Padding inside the black box */
     padding-left: 634px;
     padding-bottom: 20px;
@@ -115,6 +134,13 @@ body {
     font-family: Verdana, sans-serif, sans-serif;
     font-weight: normal;
     font-size: 140%;
+    transition: 0.25s;
+}
+
+#Welcome:hover {
+    background-color: white !important;
+    transform: scale(1.075);
+    
 }
 
 #welcome-blurb {
@@ -204,12 +230,21 @@ body {
     flex-direction: column;
     max-width: 400px; /* Set a reasonable max-width */
     box-sizing: border-box; /* Ensure padding is included in the total width */
+    transition: 0.15s;
 
 }
 
+.boxinside1:hover {
+    transform: scale(1.125);
+}
 
+.boxinside2:hover {
+    transform: scale(1.125);
+}
 
-
+.boxinside3:hover {
+    transform: scale(1.125);
+}
 
 
 .boxinside2 {
@@ -229,6 +264,7 @@ body {
     flex-direction: column;
     max-width: 400px; /* Set a reasonable max-width */
     box-sizing: border-box; /* Ensure padding is included in the total width */
+    transition: 0.15s;
 
 }
 
@@ -249,6 +285,7 @@ body {
     flex-direction: column;
     max-width: 400px; /* Set a reasonable max-width */
     box-sizing: border-box; /* Ensure padding is included in the total width */
+    transition: 0.15s;
 
 }
 
@@ -369,15 +406,28 @@ body {
     transition: background-color 0.3s ease;
     margin: 20px auto;
     display: block;
+    transition: 0.15s;
 }
+
+
+#scrollButton:hover {
+    transform: scale(1.325);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: px;
+    padding-bottom: 20px;
+    max-height: 50px;
+}
+
+
+
 
 .buttonback {
     background-color: black;
-    
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between; /* Distribute space between child elements */
+    justify-content: space-between;
     max-height: 600px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -386,17 +436,70 @@ body {
 }
 
 
+.font:hover {
+    transform: scale(1.325);
+    background-color:black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    max-height: 28px;
+}
+
+.font2:hover {
+    transform: scale(1.325);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    max-height: 28px;
+    background-color:black;
+    color: white;
+
+}
+
+
+.homepic {
+    transition: 0.15s;
+}
+
+.homepic:hover {
+    transform: scale(1.2);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 16px;
+    max-height: 28px;
+}
 
 
 
 
 
+#offButton {
+    transition: opacity 0.05s ease-in-out; /* Adjust duration and easing as needed */
+  }
 
 
+#offButton {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    transition: 0.15s;
+    transition: opacity 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+  }
+  
+#offButton img {
+    display: block; /* To prevent unwanted spacing */
+ }
 
 
-
-
+#offButton:hover {
+    transform: scale(1.225);
+}
 
 
 
